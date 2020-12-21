@@ -1,10 +1,10 @@
 import React from 'react';
-import HeaderStyles from '.styles.module.scss';
+import HeaderStyles from './styles.module.scss';
 function Header() {
   return (
     <div>
       <div className={HeaderStyles.logo}>
-        <h1>LOGO</h1>
+        <h1>Startup</h1>
       </div>
       <div className={HeaderStyles.navLinks}>
         <ul>
