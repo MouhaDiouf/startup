@@ -2,6 +2,7 @@ import React from 'react';
 import Box from './Box/Box';
 import BoxesStyles from './styles.module.scss';
 import data from '../../data';
+import ChooseUs from '../ChooseUs/ChooseUs';
 function Boxes() {
   const { boxes } = data;
   return (
@@ -11,6 +12,7 @@ function Boxes() {
           <Box key={idx} {...box} />
         ))}
       </div>
+      <ChooseUs />
     </div>
   );
 }

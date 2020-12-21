@@ -60,7 +60,7 @@ min-height: calc(100vh - 160px);
     margin: 0 auto;
     width: 75%;
     
-    
+
     .textContainer {
         flex: 0.5;
         h1 {
@@ -75,6 +75,10 @@ min-height: calc(100vh - 160px);
             border-radius: 30px;
             padding: 10px 40px 10px;
             font-size: 20px;
+            cursor: pointer;
+     &:focus {
+         outline: 0;
+     }
         }
     }
 
