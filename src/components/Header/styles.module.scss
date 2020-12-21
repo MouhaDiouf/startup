@@ -1,5 +1,87 @@
 $pink: #ff5a6e;
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+
+
+.navLinks {
+    flex: 0.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-evenly;
+        padding-left: 0;
+        width: 100%;
+        li {
+            transition: 0.5s; 
+            font-weight: bold;
+            
+            &.activeLink {
+                color: $pink
+            }
+
+            &:hover {
+                color:$pink;
+                cursor: pointer;
+
+            }
+        }
+    }
+}
+
 .logo {
 color: $pink;
+flex: 0.2;
+text-align: left;
+}
+
+.loginRegister {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0.2;
+
+ul {   
+
+        list-style-type: none;
+        display: flex;
+        padding-left: 0;
+        justify-content: space-around;
+        width: 100%;
+       text-transform: uppercase;
+       font-size: 13px;
+
+    .loginLink {
+        background: transparent none repeat scroll 0 0;
+        border: 1px solid #323a45;
+        color: #323a45;
+        padding: 10px 15px;
+        cursor: pointer;
+    
+    }
+
+
+    .registerLink {
+     background: #ff5a6e none repeat scroll 0 0;
+    border: 1px solid transparent;
+    color: #ffffff;
+    padding: 10px 15px;
+    cursor: pointer;
+
+    }
+   
+}
+
+   
 }
