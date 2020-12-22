@@ -1,0 +1,64 @@
+$pink: #ff5a6e;
+
+
+.cardOffer-container {
+    background: #ffffff none repeat scroll 0 0;
+    border: medium none;
+    padding: 67px 40px 64px;
+    box-shadow: 0 0 10px #cccccc;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    
+
+    .imageContainer {
+        font-size: 40px;
+
+        
+    }
+
+
+ 
+
+  }
+
+.cardOffer-container::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: $pink;
+    margin: 0px auto;
+    position: absolute;
+    transform: translateX(-120%);
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+    visibility: hidden;
+
+}
+
+.cardOffer-container.hovered {
+  background-color: transparent;
+  color: white; 
+  box-shadow: none;
+
+  .imageContainer {
+    color: white !important;
+  }
+}
+.cardOffer-container.hovered::before {
+  visibility: visible;  
+  transform: translateX(0%);
+
+}
+
+.cJeRRR {
+  background-color: $pink !important;
+  box-shadow: 0 0 1px 3px rgb(183, 58, 135) !important;
+}

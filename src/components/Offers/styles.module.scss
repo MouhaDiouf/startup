@@ -1,0 +1,24 @@
+$pink: #ff5a6e;
+
+.container {
+    text-align: center;
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        span {
+            color: $pink
+        }
+    }
+
+    .bar {
+        width: 100px;
+        height: 5px;
+        margin: 20px auto;
+        background-color: $pink;
+    }
+}
+.carouselContainer {
+    width: 60%;
+    margin: 0 auto;
+}
