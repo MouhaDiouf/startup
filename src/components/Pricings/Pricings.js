@@ -10,6 +10,7 @@ function Pricings() {
         Pricing <span>Plan</span>
       </h2>
       <h3>List Of Our Pricing Packages</h3>
+      <div className={PricingsStyles.bar}></div>
       <div className={PricingsStyles.pricesContainer}>
         {pricings.map((pricing) => (
           <Pricing {...pricing} />

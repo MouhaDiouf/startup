@@ -2,7 +2,9 @@ import { BsFillChatDotsFill } from 'react-icons/bs';
 import { FaRocket, FaDev, FaRocketchat } from 'react-icons/fa';
 import { GoProject } from 'react-icons/go';
 import { SiPaloaltosoftware } from 'react-icons/si';
-import { FcCustomerSupport } from 'react-icons/fc';
+import Aslan from './images/aslan.jpeg';
+import Craig from './images/craig.jpeg';
+import Shams from './images/shams.jpeg';
 const data = {
   boxes: [
     {
@@ -109,6 +111,29 @@ const data = {
         'Documentation',
       ],
       btn: 'Get Started',
+    },
+  ],
+  reviews: [
+    {
+      name: 'Aslan Kumarov',
+      job: 'CEO',
+      img: Aslan,
+      review:
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident debitis animi deleniti unde perspiciatis quasi, magni sit inventore quidem. Repudiandae vel placeat repellendus magnam earum molestiae deleniti iusto enim exercitationem?',
+    },
+    {
+      name: 'Mouha Diouf',
+      job: 'Developer',
+      img: Shams,
+      review:
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam quas eius voluptate nihil blanditiis odit! Vitae culpa quos quae aliquam?',
+    },
+    {
+      name: 'Craig Fisher',
+      job: 'Manager',
+      img: Craig,
+      review:
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam quas eius voluptate nihil blanditiis odit! Vitae culpa quos quae aliquam?',
     },
   ],
 };

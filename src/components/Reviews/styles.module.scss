@@ -1,0 +1,22 @@
+$pink: #ff5a6e;
+
+
+.container {
+    background-color: #f9f9f9;
+
+   .titles {
+       text-align: center;
+       padding-top: 40px;
+
+       h2 {
+           font-size: 2rem;
+           text-transform: uppercase;
+           span {color: $pink}
+       }
+   }
+}
+
+.reviewsContainer {
+    width: 60%;
+    margin: 0 auto;
+}
