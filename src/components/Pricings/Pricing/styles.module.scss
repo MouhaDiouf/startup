@@ -1,0 +1,50 @@
+$pink: #ff5a6e;
+
+.container {
+    width: 300px;
+    box-shadow: 0 0 10px #cccccc;
+    margin-bottom: 80px;
+    text-align: center;
+    width: 30%;
+    max-width: 1200px;
+    padding-bottom: 80px;
+
+    .type {
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    .cost {
+        font-size: 2.5rem;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0px;
+
+        li {
+            line-height: 40px;
+            margin: 0 30px;
+            text-transform: capitalize;
+            color: rgb(102,102, 102)
+        }
+    }
+
+    button {
+        background-color: transparent;
+        color: #323a45;
+        border: 2px solid #323a45;
+        padding: 8px 35px;
+        font-size: 12px;
+        line-height: 25px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    }
+    .pricingDetails {
+        border-bottom: 1px solid lightgray;
+        margin: 0px 10px;
+    }
+}

@@ -1,0 +1,20 @@
+.container {
+    width: 100%;
+    padding: 30px 50px;
+
+    p {
+        line-height: 1.6;
+    }
+    button {
+        cursor: pointer;
+        background-color: #ff5a6e;
+        color: #ffffff !important;
+        border: 2px solid #ff5a6e;
+        font-size: 15px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+}

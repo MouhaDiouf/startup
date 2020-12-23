@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    margin-top: 100px;
+
+    h3 {
+        font-size: 2rem;
+    }
+    .imageContainer {
+        height: 500px;
+
+        flex: 0.5;
+        background-image: url('../../images/working.jpeg');
+        background-position: center;
+        background-size: cover;
+    }
+    .sliderContainer {
+        flex: 0.5;
+    }
+}
