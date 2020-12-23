@@ -6,6 +6,8 @@ import Offers from './components/Offers/Offers';
 import Pricings from './components/Pricings/Pricings';
 import Reviews from './components/Reviews/Reviews';
 import Stories from './components/Stories/Stories';
+import Team from './components/Team/Team';
+
 // https://webhunt.store/themeforest/dostart/index-8.html
 //webhunt.store/themeforest/dostart/index-4.html
 function App() {
@@ -20,6 +22,7 @@ function App() {
 
       <Pricings />
       <Reviews />
+      <Team />
     </div>
   );
 }

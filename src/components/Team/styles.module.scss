@@ -1,0 +1,35 @@
+$pink: #ff5a6e;
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+
+
+    .textContainer {
+        text-align: center;
+        h2 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            span {
+                color: $pink
+            }
+        }
+    }
+
+    .bars {
+        width: 100px; 
+        height: 2px;
+        background-color: $pink;
+        margin: 20px auto;
+        margin-bottom: 40px;
+        border-radius: 5px;
+    }
+}
+
+.teamMembersContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+

@@ -5,6 +5,9 @@ import { SiPaloaltosoftware } from 'react-icons/si';
 import Aslan from './images/aslan.jpeg';
 import Craig from './images/craig.jpeg';
 import Shams from './images/shams.jpeg';
+import Chairman from './images/chairman.jpeg';
+import Manager from './images/manager.jpeg';
+import Founders from './images/investors.jpeg';
 const data = {
   boxes: [
     {
@@ -142,19 +145,25 @@ const data = {
       description:
         "Jointure goodness interest debating did outweight. It's time from them full my gone in wen Of no introduced",
       role: 'Chairman of Startup',
+      img: Chairman,
+      title: 'I Love Creating',
     },
     {
       name: 'Drunal Park',
       description:
         "Jointure goodness interest debating did outweight. It's time from them full my gone in wen Of no introduced",
       role: 'Manager of Startup',
+      img: Manager,
+      title: 'Connecting People',
     },
 
     {
-      name: 'Munia Ankor',
+      name: 'Munia & Ankor',
       description:
         "Jointure goodness interest debating did outweight. It's time from them full my gone in wen Of no introduced",
-      role: 'Founder of Startup',
+      role: 'Founders of Startup',
+      img: Founders,
+      title: 'Network Builders',
     },
   ],
 };
