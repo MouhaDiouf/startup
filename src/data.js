@@ -136,6 +136,27 @@ const data = {
         'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam quas eius voluptate nihil blanditiis odit! Vitae culpa quos quae aliquam?',
     },
   ],
+  team: [
+    {
+      name: 'Ahmed Kamal',
+      description:
+        "Jointure goodness interest debating did outweight. It's time from them full my gone in wen Of no introduced",
+      role: 'Chairman of Startup',
+    },
+    {
+      name: 'Drunal Park',
+      description:
+        "Jointure goodness interest debating did outweight. It's time from them full my gone in wen Of no introduced",
+      role: 'Manager of Startup',
+    },
+
+    {
+      name: 'Munia Ankor',
+      description:
+        "Jointure goodness interest debating did outweight. It's time from them full my gone in wen Of no introduced",
+      role: 'Founder of Startup',
+    },
+  ],
 };
 
 export default data;
