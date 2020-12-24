@@ -11,6 +11,7 @@ import Reviews from './components/Reviews/Reviews';
 import Stories from './components/Stories/Stories';
 import Team from './components/Team/Team';
 import Map from './components/Map/Map';
+import BottomLinks from './components/BottomLinks/BottomLinks';
 
 // https://webhunt.store/themeforest/dostart/index-8.html
 //webhunt.store/themeforest/dostart/index-4.html
@@ -31,6 +32,7 @@ function App() {
       <LatestBlog />
       <ContactUs />
       <Map />
+      <BottomLinks />
     </div>
   );
 }
