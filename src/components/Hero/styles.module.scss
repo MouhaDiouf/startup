@@ -62,42 +62,62 @@ min-height: calc(100vh - 160px);
     width: 75%;
     
 
-    .textContainer {
-        flex: 0.5;
-        h1 {
-            font-size: 3.5rem;
-            font-weight: bold;
-        }
 
-        button {
-            background-color: #ff5a6e;
-            color: #ffffff;
-            border: 2px solid #ff5a6e;
-            border-radius: 30px;
-            padding: 10px 40px 10px;
-            font-size: 20px;
-            cursor: pointer;
-     &:focus {
-         outline: 0;
-     }
-        }
-    }
 
-    .imageContainer {
-        flex: 0.5;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img {
-            width: 100%;
-        }
-    }
+
 
     
+}
+
+.textContainer {
+    flex: 0.5;
+    h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+    }
+
+    button {
+        background-color: #ff5a6e;
+        color: #ffffff;
+        border: 2px solid #ff5a6e;
+        border-radius: 30px;
+        padding: 10px 40px 10px;
+        font-size: 20px;
+        cursor: pointer;
+ &:focus {
+     outline: 0;
+ }
+    }
+}
+
+.imageContainer {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 100%;
+    }
 }
 
 .bottomHero {
     img {
         width: 100%;
+    }
+}
+
+
+
+
+@media(max-width:990px){
+    .imageTextContainer {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .textContainer {
+        flex: 1;
+    }
+    .imageContainer{
+        display: none;
     }
 }

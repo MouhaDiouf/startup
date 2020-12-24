@@ -1,6 +1,7 @@
 .container {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     background-color: #f9f9f9;
     margin-top: 100px;
 
@@ -9,13 +10,26 @@
     }
     .imageContainer {
         height: 500px;
-
-        flex: 0.5;
+width: 50%;
         background-image: url('../../images/working.jpeg');
         background-position: center;
         background-size: cover;
     }
     .sliderContainer {
-        flex: 0.5;
+width: 50%;
+    }
+    }
+
+
+@media(max-width:900px){
+    .container {
+        margin-top: 20px;
+        .imageContainer {
+            width: 100%;
+        }
+
+        .sliderContainer {
+            width: 100%;
+        }
     }
 }

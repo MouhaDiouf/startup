@@ -54,3 +54,30 @@ ul {
 }
 
 }
+
+
+@media(max-width:1100px){
+    .container {
+        width: 95%;
+    }
+}
+
+@media(max-width:900px){
+    .container {
+    .companyDescription,
+    .companyInfo, .contactInfo,.resources{
+        width: 40%;
+        padding: 20px;
+    }
+}
+}
+
+@media(max-width:500px){
+    .container {
+        .companyDescription,
+        .companyInfo, .contactInfo,.resources{
+            width: 100%;
+            padding: 20px;
+        }
+    }
+}

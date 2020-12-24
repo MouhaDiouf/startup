@@ -13,15 +13,16 @@ $dark-grey: #323a45;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 20px 0;
+    padding-bottom: 50px;
     .imageContainer {
-        flex: 0.4;
+        width: 40%;
         img {
             width: 100%;
         }
     }
 
     .textContainer {
-        flex: 0.5;
+        width: 50%;
         text-align: left;
 
         h2 {
@@ -70,6 +71,7 @@ $dark-grey: #323a45;
             cursor: pointer;
             text-transform: uppercase;
             font-weight: bold;
+            font-size: 1rem;
             
             &:focus {
                 outline: 0;
@@ -80,4 +82,18 @@ $dark-grey: #323a45;
     }
 
    
+}
+
+@media(max-width:900px){
+ .container {
+     width: 90%;
+ } 
+ 
+ .imageText {
+    .imageContainer {
+        width: 100%;
+    }
+    .textContainer {
+width: 100%;    }
+}
 }

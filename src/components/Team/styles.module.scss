@@ -30,6 +30,13 @@ $pink: #ff5a6e;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     
+}
+
+@media(max-width:1500px){
+    .container {
+        width: 90%;
+    }
 }
 

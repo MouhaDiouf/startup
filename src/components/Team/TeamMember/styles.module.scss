@@ -73,3 +73,9 @@ $pink: #ff5a6e;
     }
 
 }
+
+@media(max-width:700px){
+    .container {
+        width: 100%;
+    }
+}

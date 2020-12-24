@@ -24,10 +24,11 @@ $pink: #ff5a6e;
     justify-content: space-between;
     width: 70%;
     margin: 0 auto;
+    flex-wrap: wrap;
     align-items: center;
 
     form {
-        flex: 0.6;
+        width: 60%;
         input, textarea{
             font-size: 1.2rem;
             border: 1px solid lightgray;
@@ -68,8 +69,7 @@ $pink: #ff5a6e;
         }
     }
     .offices {
-        flex: 0.4;
-
+width: 40%;
         h3 {
             border-bottom: 1px solid gray;
             padding-bottom: 30px;
@@ -108,3 +108,25 @@ $pink: #ff5a6e;
         font-size: 30px;
     }
 }
+
+@media(max-width:1500px){
+    .container {
+        width: 100%;
+
+        .formAndContact {
+            width: 90%;
+            margin: 0 auto;
+            justify-content: center;
+            form {width: 100%;
+            display: block;
+            input, textarea {
+                width: 100%;
+            } 
+        margin: 20px auto;
+        margin-bottom: 40px;
+    }
+            .offices{width: 100%;}
+        }
+    }
+}
+

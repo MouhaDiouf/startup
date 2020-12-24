@@ -31,3 +31,22 @@ $pink: #ff5a6e;
     }
 
 }
+
+@media(max-width: 1500px){
+    .container {
+        width: 95%;
+    }
+}
+
+@media(max-width:900px){
+    .container {
+        
+        .videoContainer {
+            width: 100%;
+        }
+        .textContainer {
+            width: 100%;
+            margin-top: 40px;
+        }
+    }
+}

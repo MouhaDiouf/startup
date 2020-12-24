@@ -16,3 +16,15 @@
 
 
 }
+
+@media(max-width:900px){
+    .boxesContainer {
+        width: 90%;
+        flex-wrap: wrap;
+
+    }
+
+    .container {
+        padding-top: 50px;
+    }
+}
