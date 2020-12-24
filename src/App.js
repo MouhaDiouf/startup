@@ -6,11 +6,11 @@ import Hero from './components/Hero/Hero';
 import LatestBlog from './components/LatestBlog/LatestBlog';
 import Offers from './components/Offers/Offers';
 import Pricings from './components/Pricings/Pricings';
-import Question from './components/Questions/Question/Question';
 import Questions from './components/Questions/Questions';
 import Reviews from './components/Reviews/Reviews';
 import Stories from './components/Stories/Stories';
 import Team from './components/Team/Team';
+import Map from './components/Map/Map';
 
 // https://webhunt.store/themeforest/dostart/index-8.html
 //webhunt.store/themeforest/dostart/index-4.html
@@ -30,6 +30,7 @@ function App() {
       <Questions />
       <LatestBlog />
       <ContactUs />
+      <Map />
     </div>
   );
 }
