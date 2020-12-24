@@ -23,8 +23,8 @@ function LatestBlog() {
 
       <div className={BlogStyles.sliderContainer}>
         <Carousel showArrows={false} breakPoints={breakpoints}>
-          {posts.map((post) => (
-            <BlogPost {...post} />
+          {posts.map((post, idx) => (
+            <BlogPost key={idx} {...post} />
           ))}
         </Carousel>
       </div>

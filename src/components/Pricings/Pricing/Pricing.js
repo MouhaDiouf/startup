@@ -9,8 +9,8 @@ function Pricing({ type, cost, features, btn }) {
       </div>
 
       <ul className={PricingStyles.featuresContainer}>
-        {features.map((feature) => (
-          <li>{feature}</li>
+        {features.map((feature, idx) => (
+          <li key={idx}>{feature}</li>
         ))}
       </ul>
       <button>{btn}</button>

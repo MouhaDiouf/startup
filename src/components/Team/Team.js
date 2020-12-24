@@ -15,8 +15,8 @@ function Team() {
         <div className={TeamStyles.bars}></div>
       </div>
       <div className={TeamStyles.teamMembersContainer}>
-        {team.map((teamMember) => (
-          <TeamMember {...teamMember} />
+        {team.map((teamMember, idx) => (
+          <TeamMember {...teamMember} key={idx} />
         ))}
       </div>
     </div>

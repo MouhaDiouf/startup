@@ -1,6 +1,6 @@
 import React from 'react';
 import BlogPostStyles from './styles.module.scss';
-import { FaUserAlt, FaCalendar, FaComment, FaUser } from 'react-icons/fa';
+import { FaUserAlt, FaCalendar, FaComment } from 'react-icons/fa';
 function BlogPost({
   title,
   categories,
@@ -17,8 +17,8 @@ function BlogPost({
         style={{ backgroundImage: `url(${img})` }}
       >
         <ul className={BlogPostStyles.categories}>
-          {categories.map((category) => (
-            <li>{category}</li>
+          {categories.map((category, idx) => (
+            <li key={idx}>{category}</li>
           ))}
         </ul>
       </div>

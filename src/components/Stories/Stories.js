@@ -16,8 +16,8 @@ function Stories() {
           enableAutoPlay={true}
           autoPlaySpeed={10000}
         >
-          {stories.map((story) => (
-            <Story {...story} />
+          {stories.map((story, idx) => (
+            <Story {...story} key={idx} />
           ))}
         </Carousel>
       </div>

@@ -19,7 +19,7 @@ function Questions() {
       </div>
       <div className={QuestionsStyles.textContainer}>
         {questions.map((question, id) => (
-          <Question {...question} id={id + 1} />
+          <Question {...question} id={id + 1} key={id} />
         ))}
       </div>
     </div>

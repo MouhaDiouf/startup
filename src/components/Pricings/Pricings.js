@@ -12,8 +12,8 @@ function Pricings() {
       <h3>List Of Our Pricing Packages</h3>
       <div className={PricingsStyles.bar}></div>
       <div className={PricingsStyles.pricesContainer}>
-        {pricings.map((pricing) => (
-          <Pricing {...pricing} />
+        {pricings.map((pricing, idx) => (
+          <Pricing key={idx} {...pricing} />
         ))}
       </div>
     </div>

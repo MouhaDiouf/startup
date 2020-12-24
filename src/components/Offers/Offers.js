@@ -24,8 +24,8 @@ function Offers() {
           showArrows={false}
           enableAutoPlay={true}
         >
-          {offers.map((offer) => (
-            <CardOffer {...offer} />
+          {offers.map((offer, idx) => (
+            <CardOffer key={idx} {...offer} />
           ))}
         </Carousel>
       </div>

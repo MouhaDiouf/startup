@@ -17,8 +17,8 @@ function Reviews() {
       <div className={ReviewsStyles.bars}></div>
       <div className={ReviewsStyles.reviewsContainer}>
         <Carousel showArrows={false} autoPlaySpeed={5000} enableAutoPlay={true}>
-          {reviews.map((review) => (
-            <Review {...review} />
+          {reviews.map((review, idx) => (
+            <Review {...review} key={idx} />
           ))}
         </Carousel>
       </div>
