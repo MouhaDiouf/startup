@@ -1,0 +1,110 @@
+$pink: #ff5a6e;
+
+.container {
+    margin-top: 100px;
+.bars {
+    width: 100px;
+    height: 2px;
+    background-color: $pink;
+    margin: 0 auto;
+}
+
+.titles {
+    h2 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        span {
+            color: $pink;
+        }
+    }
+    text-align: center;
+}
+.formAndContact {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    align-items: center;
+
+    form {
+        flex: 0.6;
+        input, textarea{
+            font-size: 1.2rem;
+            border: 1px solid lightgray;
+            border-radius: 4px;
+
+        }
+        input {
+            display: block;
+            width: 70%;
+            padding: 10px 0;
+            
+        }
+        textarea {
+            width: 70%;
+            display: block; 
+            margin-bottom: 20px;
+        }
+       
+        h3 {
+            font-size: 1.6rem;
+            letter-spacing: 1.5px;
+        }
+        button {
+            background-color: $pink;
+            color: white;
+            outline: none;
+            border: none; 
+            padding: 8px 15px;
+            font-size: 1.2rem;
+
+            span {
+                color: white !important;
+                display: inline-flex;
+                align-items: baseline;
+                justify-content: center;
+                margin: 0px 10px
+            }
+        }
+    }
+    .offices {
+        flex: 0.4;
+
+        h3 {
+            border-bottom: 1px solid gray;
+            padding-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        .officesDetails {
+            display: flex;
+            align-items: center;
+            ul {
+                list-style-type: none;
+                padding-left: 0;
+                margin-left: 20px;
+
+                li {
+                    margin: 10px auto;
+                }
+
+                
+            }
+
+        }
+        
+    }
+}
+
+
+}
+
+.socialAddresses ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0px;
+    li {
+        margin-right: 20px;
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,20 @@
+$pink: #ff5a6e;
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    cursor: pointer;
+
+}
+
+.questionContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+
+    .icon {
+        color: $pink;
+        font-size: 20px;
+    }
+}

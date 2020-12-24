@@ -1,0 +1,34 @@
+$pink: #ff5a6e;
+
+.container {
+    margin-top: 100px;
+    background-color: #f9f9f9;
+}
+
+.sliderContainer {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.titles {
+    text-align: center;
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 2rem;
+        span {
+            color: $pink;
+        }
+    }
+}
+
+.bar {
+    width: 100px;
+    height: 2px;
+    margin: 0 auto; 
+    background-color: $pink;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}

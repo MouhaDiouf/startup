@@ -8,6 +8,10 @@ import Shams from './images/shams.jpeg';
 import Chairman from './images/chairman.jpeg';
 import Manager from './images/manager.jpeg';
 import Founders from './images/investors.jpeg';
+import blog1 from './images/blog1.jpeg';
+import blog2 from './images/blog2.jpeg';
+import blog3 from './images/blog3.jpeg';
+import blog4 from './images/blog4.jpeg';
 const data = {
   boxes: [
     {
@@ -164,6 +168,66 @@ const data = {
       role: 'Founders of Startup',
       img: Founders,
       title: 'Network Builders',
+    },
+  ],
+  questions: [
+    {
+      question: 'Do I need a business plan?',
+      answer:
+        'She wholly fat who window extent either formal. Removing welcomed civility or hastened is. Justice elderly but perhaps expense six her are another passage. Full her ten open fond walk not down.For request general express unknown are. He in just mr door body held john down he. So journey greatly or garrets. Draw door kept do so come on open mean. Estimating stimulated how reasonably precaution diminution she simplicity sir but.',
+    },
+    {
+      question: 'How long should a business plan be?',
+      answer:
+        'She wholly fat who window extent either formal. Removing welcomed civility or hastened is. Justice elderly but perhaps expense six her are another passage. Full her ten open fond walk not down.For request general express unknown are. He in just mr door body held john down he. So journey greatly or garrets. Draw door kept do so come on open mean. Estimating stimulated how reasonably precaution diminution she simplicity sir but.',
+    },
+    {
+      question: 'Where do I start?',
+      answer:
+        'She wholly fat who window extent either formal. Removing welcomed civility or hastened is. Justice elderly but perhaps expense six her are another passage. Full her ten open fond walk not down.For request general express unknown are. He in just mr door body held john down he. So journey greatly or garrets. Draw door kept do so come on open mean. Estimating stimulated how reasonably precaution diminution she simplicity sir but.',
+    },
+  ],
+
+  posts: [
+    {
+      title: 'Attended Desirous Raptures Declared Assistance',
+      description:
+        'Friendship sufficient assistance can prosperous met. As game he show it park do. Was has unknown few certain',
+      categories: ['success', 'product'],
+      comments: 23,
+      author: 'USER',
+      date: '12 Dec 2020',
+      img: blog1,
+    },
+    {
+      title: 'Attended Desirous Raptures Declared Assistance',
+      description:
+        'Friendship sufficient assistance can prosperous met. As game he show it park do. Was has unknown few certain',
+      categories: ['startup', 'business'],
+      comments: 23,
+      author: 'USER',
+      date: '12 Dec 2020',
+      img: blog2,
+    },
+    {
+      title: 'Attended Desirous Raptures Declared Assistance',
+      description:
+        'Friendship sufficient assistance can prosperous met. As game he show it park do. Was has unknown few certain',
+      categories: ['asset', 'earning'],
+      comments: 23,
+      author: 'USER',
+      date: '12 Dec 2020',
+      img: blog3,
+    },
+    {
+      title: 'Attended Desirous Raptures Declared Assistance',
+      description:
+        'Friendship sufficient assistance can prosperous met. As game he show it park do. Was has unknown few certain',
+      categories: ['startup', 'business'],
+      comments: 23,
+      author: 'USER',
+      date: '12 Dec 2020',
+      img: blog4,
     },
   ],
 };

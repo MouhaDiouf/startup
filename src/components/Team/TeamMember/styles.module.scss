@@ -32,6 +32,7 @@ $pink: #ff5a6e;
         transform: translateY(-100%);
         text-align: center;
         color: white;
+        visibility: hidden;
     }
 
     .overlayTxt {
@@ -54,6 +55,7 @@ $pink: #ff5a6e;
     }
 
     .imgContainer:hover > .overlay {
+        visibility: visible;
         transform: translateY(calc(0% - 4px));
     }
 

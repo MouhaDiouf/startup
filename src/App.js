@@ -1,9 +1,13 @@
 import './App.css';
 import Boxes from './components/Boxes/Boxes';
+import ContactUs from './components/ContactUs/ContactUs';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
+import LatestBlog from './components/LatestBlog/LatestBlog';
 import Offers from './components/Offers/Offers';
 import Pricings from './components/Pricings/Pricings';
+import Question from './components/Questions/Question/Question';
+import Questions from './components/Questions/Questions';
 import Reviews from './components/Reviews/Reviews';
 import Stories from './components/Stories/Stories';
 import Team from './components/Team/Team';
@@ -23,6 +27,9 @@ function App() {
       <Pricings />
       <Reviews />
       <Team />
+      <Questions />
+      <LatestBlog />
+      <ContactUs />
     </div>
   );
 }
