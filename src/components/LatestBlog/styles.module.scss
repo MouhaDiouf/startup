@@ -2,6 +2,7 @@ $pink: #ff5a6e;
 
 .container {
     margin-top: 100px;
+    padding-top: 20px;
     background-color: #f9f9f9;
 }
 
@@ -31,4 +32,11 @@ $pink: #ff5a6e;
     background-color: $pink;
     margin-bottom: 40px;
     margin-top: 10px;
+}
+
+@media(max-width:900px){
+    .sliderContainer {
+        width: 95%;
+        margin: 0 auto;
+    }
 }

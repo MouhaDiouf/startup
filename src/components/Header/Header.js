@@ -1,31 +1,68 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import HeaderStyles from './styles.module.scss';
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaWindowClose } from 'react-icons/fa';
 function Header() {
+  const elementRef = useRef();
+  const [showMobileNav, setshowMobileNav] = useState(false);
+
+  const handleNavShow = () => {
+    setshowMobileNav(!showMobileNav);
+  };
   return (
-    <div className={HeaderStyles.header}>
-      <div className={HeaderStyles.iconContainer}>
-        <FaBars className={HeaderStyles.navBarsIcon} />
-      </div>
-      <div className={HeaderStyles.logo}>
-        <h1>Startup</h1>
-      </div>
-      <div className={HeaderStyles.navLinks}>
-        <ul>
-          <li className={HeaderStyles.activeLink}>Home</li>
-          <li>About</li>
-          <li>Features</li>
-          <li>Overview</li>
-          <li>Pricing</li>
-          <li>Team</li>
-          <li>Contact</li>
-        </ul>
-      </div>
-      <div className={HeaderStyles.loginRegister}>
-        <ul>
-          <li className={HeaderStyles.loginLink}>Login</li>
-          <li className={HeaderStyles.registerLink}>Register</li>
-        </ul>
+    <div className={HeaderStyles.headerContainer}>
+      <div className={HeaderStyles.header}>
+        <div className={HeaderStyles.iconContainer}>
+          {!showMobileNav ? (
+            <FaBars
+              className={HeaderStyles.navBarsIcon}
+              onClick={handleNavShow}
+            />
+          ) : (
+            <FaWindowClose
+              className={HeaderStyles.navBarsIcon}
+              onClick={handleNavShow}
+            />
+          )}
+        </div>
+        <div className={HeaderStyles.logo}>
+          <h1>Startup</h1>
+        </div>
+
+        <div className={HeaderStyles.navLinks}>
+          <ul>
+            <li className={HeaderStyles.activeLink}>Home</li>
+            <li>About</li>
+            <li>Features</li>
+            <li>Overview</li>
+            <li>Pricing</li>
+            <li>Team</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div className={HeaderStyles.loginRegister}>
+          <ul>
+            <li className={HeaderStyles.loginLink}>Login</li>
+            <li className={HeaderStyles.registerLink}>Register</li>
+          </ul>
+        </div>
+        <div
+          className={`${HeaderStyles.mobileNavLinks} ${
+            showMobileNav
+              ? HeaderStyles.showMobileNav
+              : HeaderStyles.hideMobileNav
+          }`}
+          ref={elementRef}
+        >
+          <ul>
+            <li className={HeaderStyles.activeLink}>Home</li>
+            <li>About</li>
+            <li>Features</li>
+            <li>Overview</li>
+            <li>Pricing</li>
+            <li>Team</li>
+            <li>Contact</li>
+          </ul>
+        </div>
       </div>
     </div>
   );

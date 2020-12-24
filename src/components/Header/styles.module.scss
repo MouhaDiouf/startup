@@ -9,6 +9,13 @@ $pink: #ff5a6e;
     text-transform: uppercase;
     font-size: 13px;
     padding-top: 10px;
+    z-index: 3;
+
+    
+}
+
+.mobileNavLinks {
+    display: none;
 }
 .iconContainer {
     display: none;
@@ -94,12 +101,51 @@ ul {
         width: 90%;
 
     }
+    .mobileNavLinks {
+        width: 100%;
+        z-index: -2;
+        display: block;
+        background-color: white;
+        position: absolute;
+        top:0;
+        box-shadow: 0 0 10px #cccccc;
+        transition: all 0.5s ease-in-out;
+        
+        ul {
+            width: 100%;
+            list-style: none;
+            padding-left: 0px;
+            li {
+                border-top: 1px solid gray; 
+                border-bottom: 1px solid gray;
+                padding: 12px 10px;
+                text-transform: uppercase;
+            }
+
+            li:last-of-type {
+                border-bottom: none;
+            }
+        }
+        &.showMobileNav{
+            transform: translateY(65px);
+
+        }
+        &.hideMobileNav {
+            transform: translateY(-300px);
+            visibility: hidden;
+        }
+    }
 }
 
 @media(max-width:900px){
+    .headerContainer {
+        position: fixed;
+        width: 100%;
+        z-index: 99;
+    }
     .header {
         background-color: white;
-        justify-content: space-evenly;
+        justify-content: space-between;
         width: 100%;
         
         .navLinks{
@@ -107,14 +153,28 @@ ul {
         }
     }
 
+    .logo {
+        margin-right: 10px;
+    }
     .iconContainer {
         display: block;
-        font-size: 20px;
+        font-size: 25px;
+        color: gray;
+        margin-left: 10px;
+        cursor: pointer;
+        
     }
     .loginRegister {
         .loginLink, .registerLink {
             margin: 0 5px;
         }
+    }
+
+}
+
+@media(max-width:550px){
+    .loginRegister {
+        display: none;
     }
 
 }
