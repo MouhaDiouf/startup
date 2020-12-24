@@ -73,8 +73,8 @@ function ContactUs() {
               }}
             />
             <ul>
-              <li>+44-20-7328-4499,</li>
-              <li>+99-34-8878-9989 ,</li>
+              <li>+44-20-7328-4499</li>
+              <li>+99-34-8878-9989</li>
             </ul>
           </div>{' '}
           <h3>Email</h3>
@@ -92,7 +92,7 @@ function ContactUs() {
               }}
             />
             <ul>
-              <li>info@yourdomain.com ,</li>
+              <li>info@yourdomain.com</li>
               <li>admin@yourdomain.com</li>
             </ul>
           </div>
