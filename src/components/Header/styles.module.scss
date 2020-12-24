@@ -1,5 +1,12 @@
 $pink: #ff5a6e;
 
+.headerContainer {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+
+}
 .header {
     display: flex;
     justify-content: space-between;
@@ -12,6 +19,12 @@ $pink: #ff5a6e;
     z-index: 3;
 
     
+}
+.whiteBcg {
+    background-color: white;
+    box-shadow: 0 0 10px #cccccc;
+    
+
 }
 
 .mobileNavLinks {

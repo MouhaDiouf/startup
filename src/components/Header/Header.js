@@ -1,15 +1,31 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import HeaderStyles from './styles.module.scss';
 import { FaBars, FaWindowClose } from 'react-icons/fa';
 function Header() {
   const elementRef = useRef();
   const [showMobileNav, setshowMobileNav] = useState(false);
+  const [changeScroll, setchangeScroll] = useState(false);
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setchangeScroll(true);
+    } else {
+      setchangeScroll(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  }, []);
 
   const handleNavShow = () => {
     setshowMobileNav(!showMobileNav);
   };
   return (
-    <div className={HeaderStyles.headerContainer}>
+    <div
+      className={`${HeaderStyles.headerContainer} ${
+        changeScroll && HeaderStyles.whiteBcg
+      }`}
+    >
       <div className={HeaderStyles.header}>
         <div className={HeaderStyles.iconContainer}>
           {!showMobileNav ? (

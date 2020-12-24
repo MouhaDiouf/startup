@@ -79,3 +79,11 @@ $pink: #ff5a6e;
 }
 
 }
+
+@media(max-width: 1000px){
+    .container {
+        .textContainer {
+            padding: 10px;
+        }
+    }
+}
