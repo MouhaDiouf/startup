@@ -1,8 +1,12 @@
 import React from 'react';
 import HeaderStyles from './styles.module.scss';
+import { FaBars } from 'react-icons/fa';
 function Header() {
   return (
     <div className={HeaderStyles.header}>
+      <div className={HeaderStyles.iconContainer}>
+        <FaBars className={HeaderStyles.navBarsIcon} />
+      </div>
       <div className={HeaderStyles.logo}>
         <h1>Startup</h1>
       </div>
