@@ -5,6 +5,7 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 min-height: calc(100vh - 160px); 
+
 }
 
 .container::before {
@@ -90,5 +91,13 @@ min-height: calc(100vh - 160px);
         img {
             width: 100%;
         }
+    }
+
+    
+}
+
+.bottomHero {
+    img {
+        width: 100%;
     }
 }

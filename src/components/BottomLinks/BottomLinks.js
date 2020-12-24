@@ -12,6 +12,7 @@ function BottomLinks() {
         </p>
       </div>
       <div className={BottomLinksStyles.companyInfo}>
+        <h3>Company</h3>
         <ul>
           <li>Home</li>
           <li>About Us</li>
@@ -20,33 +21,35 @@ function BottomLinks() {
           <li>Blog Page</li>
         </ul>
       </div>
-      <div className={BottomLinksStyles.contactInfo}>
-        <p>
-          Possible offering at contempt mr distance stronger an. Attachment
-          excellence announcing
-        </p>
-        <ul>
-          <li>
-            <h3>Website</h3>
-            <p>www.validtheme.com</p>
-          </li>
-          <li>
-            <h3>Email</h3>
-            <p>support@validtheme.com</p>
-          </li>{' '}
-          <li>
-            <h3>Phone</h3>
-            <p>+44-20-7328-4499</p>
-          </li>
-        </ul>
-      </div>
       <div className={BottomLinksStyles.resources}>
+        <h3>Resources</h3>
         <ul>
           <li>Career</li>
           <li>Leadership</li>
           <li>Strategy</li>
           <li>Services</li>
           <li>History</li>
+        </ul>
+      </div>
+      <div className={BottomLinksStyles.contactInfo}>
+        <h3>Contact Info</h3>
+        <p>
+          Possible offering at contempt mr distance stronger an. Attachment
+          excellence announcing
+        </p>
+        <ul>
+          <li>
+            <h4>Website</h4>
+            <p>www.validtheme.com</p>
+          </li>
+          <li>
+            <h4>Email</h4>
+            <p>support@validtheme.com</p>
+          </li>{' '}
+          <li>
+            <h4>Phone</h4>
+            <p>+44-20-7328-4499</p>
+          </li>
         </ul>
       </div>
     </div>

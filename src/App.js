@@ -12,14 +12,17 @@ import Stories from './components/Stories/Stories';
 import Team from './components/Team/Team';
 import Map from './components/Map/Map';
 import BottomLinks from './components/BottomLinks/BottomLinks';
+import Footer from './components/Footer/Footer';
 
 // https://webhunt.store/themeforest/dostart/index-8.html
 //webhunt.store/themeforest/dostart/index-4.html
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Hero />
+      <div className="headerHero">
+        <Header />
+        <Hero />
+      </div>
 
       <Boxes />
       <Offers />
@@ -33,6 +36,7 @@ function App() {
       <ContactUs />
       <Map />
       <BottomLinks />
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,56 @@
+$pink: #ff5a6e;
+
+.container {
+    width: 65%;
+    margin: 30px auto;
+    color: gray;
+
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+flex-wrap: wrap;
+h3{
+    text-transform: uppercase;
+    color: black;
+}
+.companyDescription {
+width: 25%;
+h2 {
+    text-transform: uppercase;
+    color: $pink;
+}
+p {
+    line-height: 1.6;
+}
+}
+
+.companyInfo {
+    width: 22%;
+}
+
+.contactInfo {
+    width: 25%;
+}
+
+.resources {
+    width: 23%;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    li {
+        margin: 20px auto;
+        cursor: pointer;
+        transition: color .3s ease-in-out;
+        
+         &:hover {
+            color: $pink;
+        }
+        h4:hover {
+            color: gray;
+        }
+    }
+}
+
+}
