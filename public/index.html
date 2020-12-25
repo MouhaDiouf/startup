@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="stylesheet" href="main.css">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Web site created using create-react-app" />
@@ -30,6 +31,7 @@
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="progress"></div>
   <div id="root"></div>
   <!--
       This HTML file is a template.
@@ -41,6 +43,12 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+  <script src="https://code.createjs.com/1.0.0/preloadjs.min.js"></script>
+  <script>
+    let progress = document.getElementById('progress');
+    let progress = document.getElementById('gallery')
+    var queue = new createjs.LoadQueue(false);
+  </script>
 </body>
 
 </html>
