@@ -1,8 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import HeaderStyles from './styles.module.scss';
 import { FaBars, FaWindowClose } from 'react-icons/fa';
 function Header() {
-  const elementRef = useRef();
   const [showMobileNav, setshowMobileNav] = useState(false);
   const [changeScroll, setchangeScroll] = useState(false);
   const handleScroll = () => {
@@ -67,7 +66,6 @@ function Header() {
               ? HeaderStyles.showMobileNav
               : HeaderStyles.hideMobileNav
           }`}
-          ref={elementRef}
         >
           <ul>
             <li className={HeaderStyles.activeLink}>Home</li>
