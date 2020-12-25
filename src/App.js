@@ -13,7 +13,22 @@ import Team from './components/Team/Team';
 import Map from './components/Map/Map';
 import BottomLinks from './components/BottomLinks/BottomLinks';
 import Footer from './components/Footer/Footer';
+import ClipLoader from 'react-spinners/ClipLoader';
+import aslan from './images/aslan.jpeg';
+import blog1 from './images/blog1.jpeg';
+import blog2 from './images/blog2.jpeg';
+import blog3 from './images/blog3.jpeg';
+import blog4 from './images/blog4.jpeg';
+import craig from './images/craig.jpeg';
+import hero from './images/hero.png';
+import investors from './images/investors.jpeg';
+import manager from './images/manager.jpeg';
+import poster from './images/poster.jpeg';
+import shams from './images/shams.jpeg';
+import working from './images/working.jpeg';
+import chairman from './images/chairman.jpeg';
 import { useEffect, useState } from 'react';
+import FadeIn from './FadeIn';
 
 // https://webhunt.store/themeforest/dostart/index-8.html
 //webhunt.store/themeforest/dostart/index-4.html
@@ -34,30 +49,52 @@ function App() {
   };
   useEffect(() => {
     const imgs = [
-      'https://images.unsplash.com/photo-1602526211905-6adc54adb8d2?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1062&q=80',
+      aslan,
+      blog1,
+      blog2,
+      blog3,
+      blog4,
+      craig,
+      hero,
+      investors,
+      manager,
+      poster,
+      shams,
+      working,
+      chairman,
     ];
     cacheImages(imgs);
   }, []);
   return (
     <div className="App">
-      <div className="headerHero">
-        <Header />
-        <Hero />
-      </div>
+      {isLoading ? (
+        <div className="loadingContainer">
+          <ClipLoader size={100} color={'#ff5a6e'} loading={true} />
+        </div>
+      ) : (
+        <>
+          <FadeIn>
+            <div className="headerHero">
+              <Header />
+              <Hero />
+            </div>
 
-      <Boxes />
-      <Offers />
-      <Stories />
+            <Boxes />
+            <Offers />
+            <Stories />
 
-      <Pricings />
-      <Reviews />
-      <Team />
-      <Questions />
-      <LatestBlog />
-      <ContactUs />
-      <Map />
-      <BottomLinks />
-      <Footer />
+            <Pricings />
+            <Reviews />
+            <Team />
+            <Questions />
+            <LatestBlog />
+            <ContactUs />
+            <Map />
+            <BottomLinks />
+            <Footer />
+          </FadeIn>
+        </>
+      )}
     </div>
   );
 }
