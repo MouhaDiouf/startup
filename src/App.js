@@ -20,6 +20,8 @@ import blog2 from './images/blog2.jpeg';
 import blog3 from './images/blog3.jpeg';
 import blog4 from './images/blog4.jpeg';
 import craig from './images/craig.jpeg';
+import chooseUs from './images/chooseUs.svg';
+import BottomHero from './images/bottomHero.png';
 import hero from './images/hero.png';
 import investors from './images/investors.jpeg';
 import manager from './images/manager.jpeg';
@@ -62,6 +64,8 @@ function App() {
       shams,
       working,
       chairman,
+      BottomHero,
+      chooseUs,
     ];
     cacheImages(imgs);
   }, []);
